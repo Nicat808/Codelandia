@@ -1,0 +1,97 @@
+.happy-customer {
+    position: relative;
+    padding: 110px 15px;
+    margin: 110px 0;
+    .happy-customer-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .testimonials {
+      padding: 0;
+      h3 {
+        color: $white;
+      }
+    }
+    .comments {
+      display: flex;
+      width: 100%;
+      gap: 30px;
+      .comment {
+        background-color: $white;
+        position: relative;
+        padding: 35px 35px 40px;
+        @include FlexParent(column, center, center);
+        &::before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          border: 1px dashed #bb9356;
+        }
+        .comment-rating {
+          margin-bottom: 18px;
+          &::before {
+            font-family: FontAwesome;
+            content: "\f005\f005\f005\f005\f005";
+            color: #ffc80a;
+            font-size: 14px;
+            letter-spacing: 5px;
+          }
+        }
+        .cmnt {
+          text-align: center;
+          padding-bottom: 21px;
+          font-size: 15px;
+          color: $gray;
+          width: fit-content;
+        }
+        .cmnt-img {
+          width: 44px;
+          height: 44px;
+          border-radius: 45px;
+          border: 2px solid $primary;
+          img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 44px;
+            border: 2px solid #fff;
+          }
+        }
+        .cmnt-author {
+          color: $primary;
+          text-align: center;
+          text-transform: capitalize;
+          padding-top: 15px;
+          font-weight: 700;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  @media (max-width: $large-devices) {
+    .comments {
+      .comment {
+        width: 100%;
+      }
+      .comment:nth-child(3) {
+        display: none;
+      }
+      .comment:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $medium-devices) {
+    .comments {
+      .comment:nth-child(2) {
+        display: none;
+      }
+    }
+  }

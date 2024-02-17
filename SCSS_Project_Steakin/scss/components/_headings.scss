@@ -1,0 +1,20 @@
+p {
+    color: $gray;
+    font-size: 15px;
+  }
+  h4 {
+    color: $primary;
+    @include FontRuthie();
+    font-weight: 300;
+  }
+  h3 {
+    color: $black;
+    @include FontAbril();
+    font-weight: 700;
+  }
+  h4,
+  h3 {
+    text-transform: capitalize;
+    font-size: 45px;
+    text-align: center;
+  }

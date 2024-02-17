@@ -1,0 +1,24 @@
+//! Base
+@import "../scss/base/_typography";
+@import "../scss/base/_reset";
+
+//! Abstracts
+@import "../scss/abstracts/_functions";
+@import "../scss/abstracts/_mixins";
+@import "../scss/abstracts/_placeholders";
+@import "../scss/abstracts/_variables";
+
+//!Components
+@import "../scss/components/_headings";
+@import "../scss/components/_happy-customer";
+
+// //! Layout
+@import "../scss/layout/_header";
+@import "../scss/layout/_footer";
+
+//!Pages
+@import "../scss/pages/_home";
+@import "../scss/pages/_our-story";
+@import "../scss/pages/_menu-board";
+@import "../scss/pages/_contact";
+@import "../scss/pages/_shop-full-width";

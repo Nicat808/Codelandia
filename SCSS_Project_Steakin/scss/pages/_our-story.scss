@@ -1,0 +1,37 @@
+.heading-bg-layout {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 110px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: sticky;
+  }
+  .heading-bg-details {
+    width: 60%;
+    @include PositionCenter();
+    top: 70%;
+    text-align: center;
+    h3 {
+      color: $white;
+      margin-bottom: 84px;
+    }
+    .pagination {
+      a {
+        color: $white;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+      .pag-active {
+        color: $primary;
+        &::before {
+          content: "/";
+          padding: 0 20px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
